@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy a Ticket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-title {
+            font-size: 1.5rem;
+        }
+        .card-text {
+            font-size: 1.1rem;
+            color: #6c757d;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">Buy a Ticket</h1>
+        <!-- Search Form -->
+        <form action="/search" method="get" class="mb-4">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search events..." name="query">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- Event Listings -->
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <!-- Event Cards Go Here -->
+        </div>
+        
+    </div>
+    <body>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Concert A</h5>
+                            <p class="card-text">Date: May 1, 2024</p>
+                            <p class="card-text">Location: Venue X</p>
+                            <p class="card-text">Tickets Available: 100</p>
+                            <!-- Update the href attribute to point to concert_a_details.html -->
+                            <a href="/concert_a_details" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Theatre B</h5>
+                            <p class="card-text">Date: May 10, 2024</p>
+                            <p class="card-text">Location: Venue Y</p>
+                            <p class="card-text">Tickets Available: 80</p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Festival C</h5>
+                            <p class="card-text">Date: June 15, 2024</p>
+                            <p class="card-text">Location: Venue Z</p>
+                            <p class="card-text">Tickets Available: 120</p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Go Back to Homepage Button -->
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6 text-center">
+                <a href="/" class="btn btn-secondary">Go Back to Homepage</a>
+            </div>
+        </div>
+
+        <footer class="footer mt-auto py-3 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Contact Us</h5>
+                        <p>Have questions or feedback? Feel free to reach out to us via email or social media.</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="mailto:contact@example.com">Email</a></li>
+                            <li class="list-inline-item"><a href="https://www.facebook.com/example">Facebook</a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/example">Twitter</a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/example">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Subscribe to Our Newsletter</h5>
+                        <p>Stay updated with our latest events and promotions by subscribing to our newsletter.</p>
+                        <form action="/subscribe" method="post" class="row g-3">
+                            <div class="col-md-8">
+                                <input type="email" class="form-control" placeholder="Enter your email" name="email">
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn-primary">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+</body>
+</html>
